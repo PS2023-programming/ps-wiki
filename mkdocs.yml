@@ -1,23 +1,43 @@
-site_name: 2023 级问题求解（编程部分）
+site_name: 2023 级问题求解（程设部分）
 theme:
   name: material
   language: zh
+  # icon:
+  #   annotation: material/arrow-right-circle
   features:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
+    - content.tooltips
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - footnotes
   - pymdownx.tilde
+  - abbr
+  - attr_list
+  - pymdownx.snippets
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
 
 nav:
-  - 主页:
+  - 主版:
     - index.md
-  - 上手指南:
+    - 课程安排:
+      - 总览: schedule.md
+      - 第一学期: ps1.md 
+  - 指南:
     - start/index.md
+    - 程序设计基础: start/program.md
+    - 学习资源推荐: start/learn-more.md 
   - OJ:
     - oj/index.md
   - 项目:
