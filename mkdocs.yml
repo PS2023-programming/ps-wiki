@@ -1,4 +1,12 @@
 site_name: 2023 级问题求解（程设部分）
+
+# Repository
+repo_name: 'ps-wiki'
+repo_url: 'https://github.com/PS2023-programming/ps-wiki'
+
+# Copyright
+copyright: 'Copyright &copy; 2023 Problem-Solving (2023) TA Team'
+
 theme:
   name: material
   language: zh
@@ -9,6 +17,28 @@ theme:
     - navigation.tabs.sticky
     - navigation.indexes
     - content.tooltips
+  icon:
+    logo: 'material/school'
+  # favicon: 'favicon.ico'
+  font:
+    text: 'Fira Sans'
+    code: 'Fira Mono'
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
 
 extra_javascript:
   - javascripts/config.js
