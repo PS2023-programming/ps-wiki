@@ -32,17 +32,29 @@ nav:
   - 主版:
     - index.md
     - 课程安排:
-      - 总览: schedule.md
-      - 第一学期: ps1.md 
+      - 总览: schedule/index.md
+      - 第一学期: schedule/ps1.md 
   - 指南:
     - start/index.md
+    - 快速上手: start/quickstart.md
+    - 写在问求之前: start/beforeps.md
+    - 代码风格: start/code-style.md
     - 程序设计基础: start/program.md
     - 学习资源推荐: start/learn-more.md 
   - OJ:
     - oj/index.md
+    - 第一学期:
+      - 第一学期首页: oj/ps1/index.md
+      - 1-0:
+        - 讲义: oj/ps1/1-0.md
+        - 题解: oj/ps1/1-0-sol.md
+      - 1-1:
+        - 讲义: oj/ps1/1-1.md
+        - 题解: oj/ps1/1-1-sol.md
   - 项目:
     - program/index.md
-    - 梦开始的地方: program/program.md
+    - Crazy_Arcade_CLI:
+      - 首页: program/ps1/index.md
   - Lab:
     - lab/index.md
   
