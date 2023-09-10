@@ -20,6 +20,8 @@ hide:
 
 [OJ 入口](https://oj.njups.top)
 
+[OJ 备用入口](https://exam.njups.top:8085)
+
 [OJ 题解讲义](oj/)
 
 ## Lab 相关
@@ -33,6 +35,8 @@ hide:
 ## 其他
 
 [问题求解作业平台](https://t.njups.top)
+
+[作业平台备用入口](https://hw.njups.top:8085)
 
 [2023 级问题求解课程主页](http://cslabcms.nju.edu.cn/problem_solving/index.php/2023%E7%BA%A7)
 
