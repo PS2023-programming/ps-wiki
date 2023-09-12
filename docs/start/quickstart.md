@@ -133,7 +133,13 @@ $MSYS2_PATH\msys2.ico
 
 然后在选项卡标题中输入 MSYS2，保存配置文件即可。
 
-其他选项或 Windows 终端的默认配置文件可以按需设置。
+其他选项可以按需设置，也可将 MSYS2 设定为 Windows 终端的默认配置。
+
+如果你配置成功了，你将可以在 Windows 终端上的下拉菜单中看到 MSYS2 的选项：
+
+![Windows 终端中的 MSYS2 示例图片](../../pics/quickstart_msys2_in_windows_terminal.png)
+
+我们十分建议你将 MSYS2 在「设置-启动」中**设置为默认配置文件**，并建议你在非集成环境下均使用 Windows 终端进入 MSYS2 Shell 环境。
 
 ???+ question "`-msys2` 是什么意思，还可以启动其它环境吗？"
     如果你改为 `-mingw64`，那么该命令将启动 MINGW64 环境，它和默认的 MSYS2 环境没有大的区别，但是它更优先启动 `/mingw64/bin/` 下的程序。
@@ -186,6 +192,8 @@ VSCode 作为 GUI 应用，其使用是相当容易学会的，有不解之处�
 ```
 
 注意上面的 `MSYS_PATH` 替换时路径要使用**双反斜杠**。
+
+在你配置成功后，你同样可以在 VSCode 集成终端中类似 Windows 终端的下拉菜单找到 MSYS2 Shell 环境，我们同样建议你将其设为默认。
 
 !!! tip "为 settings.json 添加属性"
 
