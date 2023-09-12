@@ -72,16 +72,16 @@ MSYS2 重写了 MSYS，而后者最初就是为了为使用 Mingw 提供一个 U
 
 首先从[官网](https://www.msys2.org/)或者[南大镜像源](https://mirror.nju.edu.cn/mirrorz-help/msys2/?mirror=NJU)下载 MSYS2 安装包并安装。
 
-### 将 MSYS 的程序目录配置到环境变量
+### 将 MSYS2 的程序目录配置到环境变量
 
 ???+ info "使用 Windows 10 或更新的操作系统"
     Windows 10 的搜索功能可以极大的减轻你的思维和操作负担。
     
     如果你还在因为各种原因用更老的操作系统，那么是时候升级了——世道必进，后胜于今。
 
-使用 `Win+S` 唤出搜索菜单，键入环境变量一词，选择第一个候选项。在新出现的页面中，在 `PATH` 中添加 `$MSYS_PATH\usr\bin` 和 `$MSYS_PATH\mingw64\bin`，这样就可以在 MSYS2 环境以外使用 MSYS2 环境中的工具了。
+使用 `Win+S` 唤出搜索菜单，键入环境变量一词，选择第一个候选项。在新出现的页面中，在 `PATH` 中添加 `$MSYS2_PATH\usr\bin` 和 `$MSYS2_PATH\mingw64\bin`，这样就可以在 MSYS2 环境以外使用 MSYS2 环境中的工具了。
 
-!!! Warning "什么是 `$MSYS_PATH`？"
+!!! Warning "什么是 `$MSYS2_PATH`？"
 
     这是一个变量，代指你 MSYS2 安装的路径。**这个变量仅在文档中存在，你应该把它替换为你的 MSYS2 安装路径**。
     
@@ -94,14 +94,14 @@ MSYS2 重写了 MSYS，而后者最初就是为了为使用 Mingw 提供一个 U
 
 ???+ question "为什么有两个二进制目录？"
 
-    `$MSYS_PATH\usr\bin` 是那些 Cygwin 环境才可以运行的（使用 Unix 系统调用）的软件包的安装处，`$MSYS_PATH\mingw64\bin` 是 mingw 构建的软件包的安装处。
+    `$MSYS2_PATH\usr\bin` 是那些 Cygwin 环境才可以运行的（使用 Unix 系统调用）的软件包的安装处，`$MSYS2_PATH\mingw64\bin` 是 mingw 构建的软件包的安装处。
 
 ???+ question "我设置了环境变量，但是变化没有生效啊？"
     请确认你是否保存了所有修改并退出了所有菜单，并重启所有的终端。
     
     环境变量是在程序加载启动时赋予的，修改环境变量不会影响正在运行的程序。
 
-### 将 MSYS 配置到 Windows 终端
+### 将 MSYS2 配置到 Windows 终端
 
 Windows 终端是微软推出的全新一代、功能更加完善的终端。
 
@@ -122,13 +122,13 @@ Windows 终端是微软推出的全新一代、功能更加完善的终端。
 在名称中输入 `MSYS2`，在命令行一栏中输入：
 
 ```plain
-$MSYS_PATH\msys2_shell.cmd -defterm -no-start -use-full-path -here -msys2
+$MSYS2_PATH\msys2_shell.cmd -defterm -no-start -use-full-path -here -msys2
 ```
 
 并在图标一栏中选择：
 
 ```plain
-$MSYS_PATH\msys2.ico
+$MSYS2_PATH\msys2.ico
 ```
 
 然后在选项卡标题中输入 MSYS2，保存配置文件即可。
@@ -140,7 +140,7 @@ $MSYS_PATH\msys2.ico
 
     想知道这是怎么做到的？在两个环境分别执行 `echo $PATH` 试试。
 
-### 将 MSYS 配置到 VSCode 终端
+### 将 MSYS2 配置到 VSCode 终端
 
 VSCode 是目前一款十分流行的编辑器。从[这里](https://code.visualstudio.com/)下载 VSCode。
 
@@ -173,7 +173,7 @@ VSCode 作为 GUI 应用，其使用是相当容易学会的，有不解之处�
         "icon": "terminal-cmd"
     },
     "msys2-msys2": {
-        "path": "$MSYS_PATH\\msys2_shell.cmd",
+        "path": "$MSYS2_PATH\\msys2_shell.cmd",
         "args": [
             "-defterm",
             "-use-full-path",
