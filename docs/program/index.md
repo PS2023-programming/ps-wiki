@@ -8,3 +8,9 @@
 
     第一阶段 <span style="font-family:consolas">Hard DDL</span>：<span style="color:red">2023 年 10 月 29 日 23:59</span>
 
+## 项目学期安排（暂定）
+
++ 一、简单控制台小游戏。
++ 二、前后端分离设计的 QT 小游戏。
++ 三、不设置大作业。
++ 四、QT 小游戏的 AI 设计。

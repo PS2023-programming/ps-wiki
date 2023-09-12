@@ -81,9 +81,9 @@ MSYS2 重写了 MSYS，而后者最初就是为了为使用 Mingw 提供一个 U
 
 使用 `Win+S` 唤出搜索菜单，键入环境变量一词，选择第一个候选项。在新出现的页面中，在 `PATH` 中添加 `$MSYS_PATH\usr\bin` 和 `$MSYS_PATH\mingw64\bin`，这样就可以在 MSYS2 环境以外使用 MSYS2 环境中的工具了。
 
-???+ question "什么是 `$MSYS_PATH`？"
+!!! Warning "什么是 `$MSYS_PATH`？"
 
-    这是一个变量，代指你 MSYS2 安装的路径。
+    这是一个变量，代指你 MSYS2 安装的路径。**这个变量仅在文档中存在，你应该把它替换为你的 MSYS2 安装路径**。
     
     计算机领域的文档经常出现这样的表达，使用变量的原因是每个人具体的配置不同。
 
@@ -173,7 +173,7 @@ VSCode 作为 GUI 应用，其使用是相当容易学会的，有不解之处�
         "icon": "terminal-cmd"
     },
     "msys2-msys2": {
-        "path": "C:\\msys64\\msys2_shell.cmd",
+        "path": "$MSYS_PATH\\msys2_shell.cmd",
         "args": [
             "-defterm",
             "-use-full-path",
@@ -184,6 +184,20 @@ VSCode 作为 GUI 应用，其使用是相当容易学会的，有不解之处�
     },
 }
 ```
+
+注意上面的 `MSYS_PATH` 替换时路径要使用**双反斜杠**。
+
+???+ question "为什么要用双反斜杠？"
+    Windows 默认的路径符号是反斜杠，但在 JSON 字符串里，这是特殊字符（[转义字符](https://zh.wikipedia.org/zh-cn/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6)），需要再用一个反斜杠转义后才是「真正」的反斜杠。
+
+???+ question "上面这段应该添加到 JSON 文件的哪里？"
+
+    上面要求你添加的内容其实是 JSON 配置「顶级对象」的一个属性（即 `"something": {...}`）。
+
+    如果你的 JSON 里没有任何内容，你应该在上述内容的外层再添加一对大括号表示「顶级」对象。
+
+    如果你的 JSON 里已经存在有内容，那么最外层的大括号就是「顶级对象」，请你在它内部的最后一个属性结束处加上一个**英文逗号**（如果原来没有的话），并在其后加上上面的这段。
+
 
 ???+ question "什么是 JSON？"
 
@@ -197,6 +211,8 @@ VSCode 作为 GUI 应用，其使用是相当容易学会的，有不解之处�
 ### 用 `pacman` 安装工具
 
 我们接下来安装一些完成课程实验必要的工具：
+
+在 MSYS2 环境中运行：
 
 ```shell
 pacman -S mingw-w64-x86_64-toolchain make git vim man
@@ -241,7 +257,7 @@ g++ --version
 
 接下来我们来学习如何使用 Unix shell 环境编译和运行程序。顺便借机熟悉一下 Unix shell 以及其包含的若干命令行工具的使用。
 
-在 Windows 终端中打开 MINGW64 Shell，输入 `cd ~` 将目录切换至自己的家目录。
+在 Windows 终端中打开 MSYS2 Shell，输入 `cd ~` 将目录切换至自己的家目录。
 
 ???+ question "这是在干什么？"
 
