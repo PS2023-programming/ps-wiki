@@ -15,4 +15,6 @@
 
 !!! info "最新题解&讲义更新情况"
 
-    <font color=red><b>Updates：</b></font> OJ 1-0 讲义已更新
+    <font color=red><b>Updates：</b></font> OJ 1-1 讲义已更新
+    
+    OJ 1-0 讲义已更新
