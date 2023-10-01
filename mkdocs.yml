@@ -122,6 +122,8 @@ nav:
       - 1-1:
         - 讲义: oj/ps1/1-1.md
         - 题解: oj/ps1/1-1-sol.md
+      - 1-2:
+        - 题解: oj/ps1/1-2-sol.md
   - 项目:
     - program/index.md
     - Crazy_Arcade_CLI:
