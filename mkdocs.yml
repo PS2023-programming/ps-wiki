@@ -128,8 +128,11 @@ nav:
         - 题解: oj/ps1/1-3-sol.md
   - 项目:
     - program/index.md
-    - Crazy_Arcade_CLI:
+    - NJU Universalis（问求风云）:
       - 首页: program/ps1/index.md
+      - 零：环境配置和上手: 
+        - program/ps1/0/index.md
+        - 梦开始的地方: program/ps1/0/getcode.md
   - Lab:
     - lab/index.md
   
