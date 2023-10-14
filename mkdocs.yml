@@ -133,6 +133,7 @@ nav:
       - 零：环境配置和上手: 
         - program/ps1/0/index.md
         - 梦开始的地方: program/ps1/0/getcode.md
+        - 基础设施: program/ps1/0/complete_shell.md
   - Lab:
     - lab/index.md
   
