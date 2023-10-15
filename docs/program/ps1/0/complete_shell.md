@@ -141,6 +141,7 @@ system("make compile");
     + c 令程序继续运行，直到执行到某断点时停下。
     + n 单步执行，跨越函数调用。
     + s 单步进入，会进入函数调用。
+    + p 打印变量的值。
     
     记得在编译程序时打开生成调试信息的选项 `-g`。
 
@@ -282,7 +283,7 @@ tar -czvf $(STU_ID)_PSPJ0_$(PLATFORM)_$(VERSION).tar.gz $(FOLDER_NAME)
 
 ```shell
 tar -xzvf $(STU_ID)_PSPJ0_$(PLATFORM).tar.gz
-cd $(STU_ID)_PSPJ0_$(PLATFORM)
+cd project-1
 git reset --hard HEAD
 cp path/to/std_makefile Makefile
 make clean
