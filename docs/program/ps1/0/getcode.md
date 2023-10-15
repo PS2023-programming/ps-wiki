@@ -89,4 +89,4 @@ Error [/home/litrehinn/project-1-dev/minitui/source/minitui/event.cpp:120 tui_ex
 !!! info "Windows Terminal 兼容性提醒"
     如果 Windows Terminal 提示找不到二进制文件而文件确实存在，那么请检查你的 Windows Terminal 的版本。
 
-    如果显示版本是 `1.18.*`，那么应该是 Windows Terminal 新鲜出炉的[咖喱味 bug](https://github.com/microsoft/terminal/issues/15487) 导致的，请回退至 1.17.*。
+    如果显示版本是 `1.18.*`，那么应该是 Windows Terminal 新鲜出炉的[咖喱味 bug](https://github.com/microsoft/terminal/issues/15487) 导致的，请回退至 `1.17.*`。
