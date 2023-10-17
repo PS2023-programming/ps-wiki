@@ -4,9 +4,9 @@
 
 !!! info "最近 DDL 通告（第一学期）"
 
-    第一周 OJ 提交截止日期：<span style="color:green">2023 年 9 月 20 日 18:30</span>
-
-    第一周 OJ 补交截止日期：<span style="color:red">2023 年 9 月 24 日 20:00</span>
+    第五周 OJ 提交截止日期：<span style="color:green">2023 年 10 月 18 日 18:30</span>
+    
+    第五周 OJ 补交截止日期：<span style="color:red">2023 年 10 月 22 日 20:00</span>
 
 ## OJ 学期安排（暂定）
 
