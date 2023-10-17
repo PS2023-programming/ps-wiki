@@ -57,6 +57,8 @@ markdown_extensions:
   - md_in_html
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
 
 nav:
   - 主版:
@@ -130,8 +132,12 @@ nav:
         - 题解: oj/ps1/1-4-sol.md
   - 项目:
     - program/index.md
-    - Crazy_Arcade_CLI:
+    - NJU Universalis（问求风云）:
       - 首页: program/ps1/index.md
+      - 零：环境配置和上手: 
+        - program/ps1/0/index.md
+        - 梦开始的地方: program/ps1/0/getcode.md
+        - 基础设施: program/ps1/0/complete_shell.md
   - Lab:
     - lab/index.md
   
