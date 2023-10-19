@@ -4,7 +4,7 @@
 
 !!! info "最近 DDL 通告（第一学期）"
 
-    第零阶段 <span style="font-family:consolas">Soft DDL</span>：<span style="color:green">2023 年 10 月 18 日 20:00</span>
+    第零阶段 <span style="font-family:consolas">Soft DDL</span>：<span style="color:green">2023 年 10 月 21 日 20:00</span>
 
     第零阶段 <span style="font-family:consolas">Hard DDL</span>：<span style="color:red">2023 年 10 月 25 日 23:59</span>
 

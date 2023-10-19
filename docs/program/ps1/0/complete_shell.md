@@ -273,7 +273,7 @@ git commit -m "finish phase0"
 具体地，你可以通过在工程的直接父级路径运行下述命令来获得工程压缩包：
 
 ```shell
-make -c $(FOLDER_NAME) clean
+make -C $(FOLDER_NAME) clean
 tar -czvf $(STU_ID)_PSPJ0_$(PLATFORM)_$(VERSION).tar.gz $(FOLDER_NAME)
 ```
 
