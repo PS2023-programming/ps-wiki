@@ -2,9 +2,13 @@
 
 !!! Warning "Windows Terminal 兼容性提醒"
     
-    Windows Terminal `1.18.*` 版本中存在严重影响项目运行的 [bug](https://github.com/microsoft/terminal/issues/15487)，如果你在使用该版本，请回退至 `1.17.*`。
+    ~~Windows Terminal `1.18.*` 版本中存在严重影响项目运行的 [bug](https://github.com/microsoft/terminal/issues/15487)，如果你在使用该版本，请回退至 `1.17.*`。~~
 
-    我们正在试图修复该兼容性问题，请关注项目[远程仓库](https://github.com/PS2023-programming/project-1)的最新 commit 或执行 `git pull`。
+    ~~我们正在试图修复该兼容性问题，请关注项目[远程仓库](https://github.com/PS2023-programming/project-1)的最新 commit 或执行 `git pull`。~~
+
+    我们已经修复了兼容性问题。
+    
+    请运行 `git pull` 获得最新代码并手动处理冲突，或者阅读[远程仓库](https://github.com/PS2023-programming/project-1)上的代码更改手动编辑代码。
 
 ## 简介
 

@@ -138,6 +138,16 @@ nav:
         - program/ps1/0/index.md
         - 梦开始的地方: program/ps1/0/getcode.md
         - 基础设施: program/ps1/0/complete_shell.md
+      - 一：Hello, Minitui!:
+        - program/ps1/1/index.md
+        - RTFSC（框架代码导读）: program/ps1/1/learn_program.md
+        - 组件管理与绘制: program/ps1/1/draw.md
+        - 用户输入与事件: program/ps1/1/event.md
+      - 二：地图编辑器:
+        - program/ps1/2/index.md
+        - 多组件与布局: program/ps1/2/layout.md
+        - 地图显示与编辑: program/ps1/2/map.md
+        - 地图数据持久化: program/ps1/2/serialization.md
   - Lab:
     - lab/index.md
   
