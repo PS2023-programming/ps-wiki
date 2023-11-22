@@ -132,6 +132,12 @@ nav:
         - 题解: oj/ps1/1-4-sol.md
       - 1-5:
         - 题解: oj/ps1/1-5-sol.md
+      - 1-6:
+        - 题解: oj/ps1/1-6-sol.md
+      - 1-7:
+        - 题解: oj/ps1/1-7-sol.md
+      - 1-8:
+        - 题解: oj/ps1/1-8-sol.md
   - 项目:
     - program/index.md
     - NJU Universalis（问求风云）:
