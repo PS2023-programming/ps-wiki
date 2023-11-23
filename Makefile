@@ -11,4 +11,7 @@ build:
 clean:
 	-@rm -rf site
 
+%.o : %.cpp
+	g++ -Wall -O2 -o %.o %.c
+
 .PHONY: build clean init
