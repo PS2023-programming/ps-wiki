@@ -138,6 +138,10 @@ nav:
         - 题解: oj/ps1/1-7-sol.md
       - 1-8:
         - 题解: oj/ps1/1-8-sol.md
+      - 1-9:
+        - 题解: oj/ps1/1-9-sol.md
+      - 1-10:
+        - 题解: oj/ps1/1-10-sol.md
   - 项目:
     - program/index.md
     - NJU Universalis（问求风云）:
