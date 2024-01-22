@@ -142,6 +142,8 @@ nav:
         - 题解: oj/ps1/1-9-sol.md
       - 1-10:
         - 题解: oj/ps1/1-10-sol.md
+      - 1-F:
+        - 讲义: oj/ps1/1-F-tut.md
   - 项目:
     - program/index.md
     - NJU Universalis（问求风云）:
@@ -162,4 +164,6 @@ nav:
         - 地图数据持久化: program/ps1/2/serialization.md
   - Lab:
     - lab/index.md
+  # - 作业平台:
+  #   - hw/index.md
   

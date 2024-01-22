@@ -207,6 +207,9 @@ Makefile 生成一个目标时，会先检查依赖是否存在，或者是需�
 
 Makefile 中还可以定义所谓的**伪目标**。伪目标的目标名并不是真正的文件，而只是一个*操作名*，它被 Makefile 生成时不会产生对应的目标文件，只会执行对应的制法。Makefile 会试图自动识别哪些目标是伪目标，你也可以用 `.PHONY: targets` 来指定。
 
+???+ info "注意缩进"
+    Make 对 Makefile 中的缩进敏感。`recipe` 的内容需要有一个 Tab 的缩进。 
+
 ???+ info "附加依赖"
     Makefile 的语法很灵活。你可以在定义一个规则的前后为目标添加其它依赖。语法形如 `target ... : prerequisites ...`，不需要添加 `recipe`。
 
@@ -292,21 +295,45 @@ Makefile 还有一些内置函数供编写者引用。函数引用的格式和�
     <br />*注意命令中的 `$` 需用 `$$` 转义。*
 
 ??? example "结合实际"
-    阅读项目代码
+    阅读项目代码，现在你能够看懂项目
 
-#### 条件判定
+#### 条件语句
 
-Makefile 具有利用变量进行条件判断的功能。
+Makefile 具有通过条件语句选择性保留代码的功能。其基本格式如下：
 
+```text
+if-statement (condition)
+    ...
+else
+    ...
+endif
+```
+
+条件语句包含的代码可以是变量声明/定义等，也可以是 `recipe` 中的内容。在实际执行时，只有满足条件的代码会被保留。
+
+条件语句具有四种形式的 `if-statement`：
+
++ `ifdef ()`
++ `ifndef ()`
++ `ifeq`
++ `ifneq`
 
 ???+ example "结合实际"
-    阅读项目 Makefile 中的条件判断语句，你觉得它们起到了什么功能？
+    阅读项目 Makefile 中的条件语句，你觉得它们起到了什么功能？
 
 ???+ note "进一步学习"
     要进一步了解 Makefile 的编写和 Make 的使用，可以参考两样资料。
 
     + [GNU make 官方文档](https://www.gnu.org/software/make/manual/make.html)。这里有对于 Make 和 Makefile 用法和规范的最详尽和权威的描述。
     + [跟我一起写 Makefile](../../../../files/Makefile.pdf)。这是一个初学者友好，循序渐进的中文教程。上文介绍 Makefile 的内容也参考了此教程。*该教程的作者[陈皓](https://coolshell.cn/haoel/)于 2023 年 5 月猝然去世。R. I. P.*。
+
+!!! abstract "Makefile 思考题"
+    结合上文所述的 Makefile 基本知识和项目 Makefile 的代码内容，完成如下思考题：
+    
+    + 指出 `Makefile` 中 `CXXFLAGS` 变量最终的值。假设要为游戏的所有源代码文件增加一个 `common/include` 的 `#include` 搜索路径，应该如何修改 `Makefile` （当然，你不要真的修改 `Makefile`）？
+    
+    + `ansi.h` 并未被 `Makefile` 文件中的代码指定为任何目标的依赖，本身也没有被指定为目标。为什么在修改 `ansi.h` 后，执行 `make compile` 会导致部分源代码被重新编译？或者说，`Makefile` 是如何识别头文件依赖的？你的回答应该尽可能详细。
+    <br />*提示：查看编译后 `build` 目录下的 `*.d` 文件，并查阅 `g++` 中 `-MMD` 命令的作用。*
 
 
 ## 代码架构

@@ -36,7 +36,7 @@ hide:
 
 [问题求解作业平台](https://t.njups.top)
 
-[作业平台备用入口](https://hw.njups.top:8085)
+[作业平台备用入口](http://8.130.93.185:8429/)
 
 [2023 级问题求解课程主页](http://cslabcms.nju.edu.cn/problem_solving/index.php/2023%E7%BA%A7)
 
