@@ -1,0 +1,11 @@
+.heimu:hover {
+  color: var(--md-typeset-color) !important;
+  background-color: var(--md-default-bg-color) !important;
+}
+
+.heimu {
+  color: var(--md-typeset-table-color) !important;
+  background-color: var(--md-typeset-color) !important;
+  text-shadow: none !important;
+  transition: background-color 0.3s !important;
+}

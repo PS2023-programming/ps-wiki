@@ -7,6 +7,9 @@ repo_url: 'https://github.com/PS2023-programming/ps-wiki'
 # Copyright
 copyright: 'Copyright &copy; 2023 Problem-Solving (2023) TA Team'
 
+extra_css:
+  - css/heimu.css
+
 theme:
   name: material
   language: zh

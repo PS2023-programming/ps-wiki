@@ -3,8 +3,10 @@
 !program
 !start
 !*.md
+!*.css
 !ps1
 !files
+!css
 !schedule
 !pics
 !lang
