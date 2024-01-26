@@ -157,7 +157,9 @@ nav:
         - 基础设施: program/ps1/0/complete_shell.md
       - 一：Hello, Minitui!:
         - program/ps1/1/index.md
-        - RTFSC（框架代码导读）: program/ps1/1/learn_program.md
+        - RTFSC（框架代码导读）: 
+          - program/ps1/1/learn_program/index.md
+          - 代码组织与构建: program/ps1/1/learn_program/c_make_principle.md
         - 组件管理与绘制: program/ps1/1/draw.md
         - 用户输入与事件: program/ps1/1/event.md
       - 二：地图编辑器:
